@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+}
+
+.container-grid button,
+.container-grid div {
+  width: 90px;
+  height: 92px;
+  border: 1px solid wheat;
+  color: white;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+#input {
+  grid-column: 1 / 5;
+  width: 99.5%;
+  background-color: whitesmoke;
+  color: #000;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  font-size: 53px;
+}
+
+.operator-place {
+  font-size: 26px;
+  margin-right: 6px;
+  color: red;
+}
+
+#input label {
+  margin-right: 6px;
+}
+
+#enter {
+  width: 99%;
+  height: 98%;
+  grid-column: span 2;
+  background-color: orange;
+}
+
+#AC {
+  grid-column: span 2;
+  width: 100%;
+  background-color: orange;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+  .container-grid {
+    width: 350px;
+  }
+
+  .container-grid button,
+  .container-grid div {
+    width: 100%;
+    width: 100%;
+    font-size: 30px;
+  }
+}
