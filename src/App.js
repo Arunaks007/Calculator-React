@@ -55,7 +55,7 @@ export default function App() {
       if (boolTemp.current) {
         setInput(event.key);
         boolTemp.current = false;
-      } else if (boolTemp.current === false) {
+      } else if (boolTemp.current === false && input !== "0") {
         setInput((prev) => prev + event.key);
       } else {
         input !== "0" ? setInput(input + event.key) : setInput(event.key);
